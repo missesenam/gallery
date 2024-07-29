@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    row-gap: 30px;
+    margin-top: 50px;
+    
+}
+
+
+.picture-cont{
+position: relative;
+overflow: hidden;
+height: 200px;
+transition: transform 0.3s ease;
+
+}
+.picture-cont img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+
+}
+.trans{
+    position: absolute; 
+     top: 0;
+    left: 0;
+     width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+} 
+.about{
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    /* color: rgb(0, 0, 0); */ color: white;
+    font-size: 1.2rem;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+.picture-cont:hover{
+    transform: translateY(-20px);
+}
+.picture-cont:hover .trans{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.picture-cont:hover img{
+    transform: scale(1.1);
+}
+.picture-cont:hover .about{
+transform: translatey(-25px);
+}
+
+
+
+
+@media  (max-width: 900px) {
+    .cont{
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+    .picture-cont{
+        height: 300px;
+    }
+}
+@media  (max-width: 544px) {
+    .cont{
+        grid-template-columns: 1fr;
+        place-content: center;
+    }
+    .picture-cont{
+        height: 300px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="cont">
+
+        
+        <div class="picture-cont">
+            <img src="./img/banner_1.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="picture-cont">
+            <img src="./img/banner_2.JPG" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/banner_3.jpeg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/banner_4.JPG" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/banner_5.JPG" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/banner_6.jpeg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/gfcrf.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/gzdbzfb.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/hv.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/ncjjn.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/vintage rolls royce.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/zdffd.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-cont">
+            <img src="./img/zvzvfdd.jpg" alt="" width="100%" height="100%">  
+            <div class="trans">
+                <div class="about">
+                    <p>best cars </p>
+                    <p>vitage car</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>
